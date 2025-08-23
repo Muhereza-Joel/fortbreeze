@@ -72,7 +72,7 @@ export default function HeroSection({
 
     return (
         <section
-            className={`${!bgImage && bgColor} relative`}
+            className={`${!bgImage && bgColor} relative pt-10`}
             style={
                 bgImage
                     ? { background: `url(${bgImage}) center/cover no-repeat` }
