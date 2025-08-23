@@ -2,14 +2,8 @@ import { useEffect, useState } from "react";
 
 export default function ThemeToggle() {
     const [theme, setTheme] = useState(() => {
-        // Check saved theme or fallback to system preference
         if (typeof window !== "undefined") {
-            return (
-                localStorage.getItem("theme") ||
-                (window.matchMedia("(prefers-color-scheme: dark)").matches
-                    ? "dark"
-                    : "light")
-            );
+            return localStorage.getItem("theme") || "light";
         }
         return "light";
     });

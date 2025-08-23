@@ -6,6 +6,19 @@ export default function Footer() {
         <footer className="bg-gray-900 border-t border-gray-700 mt-auto">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-12">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    {/* Shop */}
+                    <div>
+                        <h3 className="text-lg font-semibold text-gray-200 mb-4">
+                            Fort Breeze Hotel
+                        </h3>
+                        <p className="text-gray-400">
+                            At Fortbreeze Hotel, we pride ourselves on
+                            delivering exceptional services and attention to
+                            detail. Enjoy elegantly appointed rooms, spotless
+                            facilities, and a dedicated team committed to making
+                            your stay perfect.
+                        </p>
+                    </div>
                     {/* Customer Service */}
                     <div>
                         <h3 className="text-lg font-semibold text-gray-200 mb-4">
@@ -14,7 +27,7 @@ export default function Footer() {
                         <ul className="space-y-2">
                             <li>
                                 <Link
-                                    href="#"
+                                    href={route("contact")}
                                     className="text-gray-400 hover:text-gray-300"
                                 >
                                     Contact Us
@@ -22,7 +35,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="#"
+                                    href={route("faq")}
                                     className="text-gray-400 hover:text-gray-300"
                                 >
                                     FAQs
@@ -30,48 +43,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-gray-300"
-                                >
-                                    Shipping Information
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-gray-300"
-                                >
-                                    Returns & Exchanges
-                                </Link>
-                            </li>
-                        </ul>
-                    </div>
-
-                    {/* About Us */}
-                    <div>
-                        <h3 className="text-lg font-semibold text-gray-200 mb-4">
-                            About Us
-                        </h3>
-                        <ul className="space-y-2">
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-gray-300"
-                                >
-                                    Our Story
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-gray-300"
-                                >
-                                    Careers
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#"
+                                    href={route("privacy")}
                                     className="text-gray-400 hover:text-gray-300"
                                 >
                                     Privacy Policy
@@ -79,7 +51,7 @@ export default function Footer() {
                             </li>
                             <li>
                                 <Link
-                                    href="#"
+                                    href={route("terms")}
                                     className="text-gray-400 hover:text-gray-300"
                                 >
                                     Terms of Service
@@ -88,42 +60,18 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Shop */}
+                    {/* About Us */}
                     <div>
                         <h3 className="text-lg font-semibold text-gray-200 mb-4">
-                            Shop
+                            More Info
                         </h3>
                         <ul className="space-y-2">
                             <li>
                                 <Link
-                                    href="#"
+                                    href={route("careers")}
                                     className="text-gray-400 hover:text-gray-300"
                                 >
-                                    All Products
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-gray-300"
-                                >
-                                    New Arrivals
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-gray-300"
-                                >
-                                    Best Sellers
-                                </Link>
-                            </li>
-                            <li>
-                                <Link
-                                    href="#"
-                                    className="text-gray-400 hover:text-gray-300"
-                                >
-                                    Special Offers
+                                    Careers
                                 </Link>
                             </li>
                         </ul>
@@ -206,7 +154,7 @@ export default function Footer() {
                 <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
                     <p>
                         &copy; {new Date().getFullYear()} Fort Breeze Hotel. All
-                        rights reserved.
+                        rights reserved. Powered by MOELS GROUP
                     </p>
                 </div>
             </div>

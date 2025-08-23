@@ -7,7 +7,7 @@ use Inertia\Inertia;
 
 Route::get('/', function () {
     return Inertia::render('Home');
-});
+})->name('root');
 
 Route::get('/home', function () {
     return Inertia::render('Home');
@@ -37,9 +37,29 @@ Route::get('/booking', function () {
     return Inertia::render('Booking');
 })->name('booking');
 
+Route::get('/privacy-policy', function () {
+    return Inertia::render('PrivacyPolicy');
+})->name('privacy');
+
+Route::get('/terms-of-service', function () {
+    return Inertia::render('TermsOfService');
+})->name('terms');
+
+Route::get('/frequently-asked-questions', function () {
+    return Inertia::render('FAQ');
+})->name('faq');
+
+Route::get('/careers', function () {
+    return Inertia::render('Careers');
+})->name('careers');
+
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::fallback(function () {
+    return Inertia::render('NotFound');
+})->name('not-found');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
