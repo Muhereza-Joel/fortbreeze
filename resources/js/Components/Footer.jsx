@@ -154,7 +154,19 @@ export default function Footer() {
                 <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">
                     <p>
                         &copy; {new Date().getFullYear()} Fort Breeze Hotel. All
-                        rights reserved. Powered by MOELS GROUP
+                        rights reserved.
+                    </p>
+                    <p className="text-sm text-gray-500 pt-2">
+                        Powered by{" "}
+                        <a
+                            href="https://github.com/Muhereza-Joel"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="font-semibold text-blue-600 underline hover:text-blue-800 inline-flex items-center"
+                        >
+                            MOELS GROUP
+                            <span className="ml-1">↗</span>
+                        </a>
                     </p>
                 </div>
             </div>
