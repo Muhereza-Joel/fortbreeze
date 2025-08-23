@@ -6,6 +6,7 @@ import BackToTop from "@/Components/BackToTop";
 import TopBar from "@/Components/TopBar";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import CookieBanner from "@/Components/CookieBannar";
 
 export default function PublicLayout({ title, children }) {
     const [scrolled, setScrolled] = useState(false);
@@ -168,6 +169,7 @@ export default function PublicLayout({ title, children }) {
 
                 {/* Footer */}
                 <BackToTop />
+                <CookieBanner />
                 <Footer />
             </div>
         </>
