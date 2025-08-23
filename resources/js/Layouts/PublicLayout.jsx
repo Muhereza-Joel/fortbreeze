@@ -4,9 +4,12 @@ import NavLink from "@/Components/NavLink";
 import { useEffect, useState } from "react";
 import BackToTop from "@/Components/BackToTop";
 import TopBar from "@/Components/TopBar";
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function PublicLayout({ title, children }) {
     const [scrolled, setScrolled] = useState(false);
+    const [menuOpen, setMenuOpen] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -29,23 +32,89 @@ export default function PublicLayout({ title, children }) {
                             : "bg-white dark:bg-gray-900 shadow-sm"
                     }`}
                 >
-                    {/* TopBar */}
                     <TopBar />
 
                     {/* Navigation */}
                     <nav className="border-t border-gray-200 dark:border-gray-700">
                         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                             <div className="flex justify-between h-16 items-center">
-                                {/* Left: Logo + Links */}
-                                <div className="flex items-center space-x-8">
-                                    <Link
-                                        className="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-blue-900 to-indigo-900 hover:from-indigo-600 hover:to-blue-700 transition-all duration-300 py-2 px-4"
-                                        href={route("root")}
+                                {/* Logo */}
+                                <Link
+                                    className="text-2xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 via-blue-900 to-indigo-900 hover:from-indigo-600 hover:to-blue-700 transition-all duration-300 py-2 px-4"
+                                    href={route("root")}
+                                >
+                                    FortBreeze Hotel
+                                </Link>
+
+                                {/* Desktop Links */}
+                                <div className="hidden sm:flex sm:space-x-6">
+                                    <NavLink
+                                        href={route("about")}
+                                        active={route().current("about")}
                                     >
-                                        FortBreeze Hotel
+                                        About Us
+                                    </NavLink>
+                                    <NavLink
+                                        href={route("services")}
+                                        active={route().current("services")}
+                                    >
+                                        Our Services
+                                    </NavLink>
+                                    <NavLink
+                                        href={route("rooms")}
+                                        active={route().current("rooms")}
+                                    >
+                                        Rooms
+                                    </NavLink>
+                                    <NavLink
+                                        href={route("restaurant")}
+                                        active={route().current("restaurant")}
+                                    >
+                                        Restaurant & Bar
+                                    </NavLink>
+                                    <NavLink
+                                        href={route("contact")}
+                                        active={route().current("contact")}
+                                    >
+                                        Contact Us
+                                    </NavLink>
+                                </div>
+
+                                {/* Right: Book Now & Hamburger */}
+                                <div className="flex items-center space-x-4">
+                                    <Link
+                                        href={route("booking")}
+                                        className="hidden sm:inline-block px-8 py-2 bg-orange-600 text-white rounded-full shadow hover:bg-orange-700 transition-colors duration-300"
+                                    >
+                                        Book Now
                                     </Link>
 
-                                    <div className="hidden sm:flex sm:space-x-6">
+                                    {/* Mobile Hamburger */}
+                                    <button
+                                        className="sm:hidden p-2 rounded-md focus:outline-none"
+                                        onClick={() => setMenuOpen(!menuOpen)}
+                                    >
+                                        {menuOpen ? (
+                                            <X className="h-6 w-6 text-gray-900 dark:text-gray-100" />
+                                        ) : (
+                                            <Menu className="h-6 w-6 text-gray-900 dark:text-gray-100" />
+                                        )}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Mobile Menu with animation */}
+                        <AnimatePresence>
+                            {menuOpen && (
+                                <motion.div
+                                    initial={{ height: 0, opacity: 0 }}
+                                    animate={{ height: "auto", opacity: 1 }}
+                                    exit={{ height: 0, opacity: 0 }}
+                                    transition={{ duration: 0.3 }}
+                                    className="sm:hidden overflow-hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700"
+                                >
+                                    <div className="flex flex-col px-4 py-4 space-y-3">
                                         <NavLink
                                             href={route("about")}
                                             active={route().current("about")}
@@ -78,24 +147,21 @@ export default function PublicLayout({ title, children }) {
                                         >
                                             Contact Us
                                         </NavLink>
-                                    </div>
-                                </div>
 
-                                {/* Right: Book Now */}
-                                <div className="flex items-center space-x-4">
-                                    <Link
-                                        href={route("booking")}
-                                        className="px-8 py-2 bg-orange-600 text-white rounded-full shadow hover:bg-orange-700 transition-colors duration-300"
-                                    >
-                                        Book Now
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
+                                        <Link
+                                            href={route("booking")}
+                                            className="mt-2 block w-full text-center px-4 py-2 bg-orange-600 text-white rounded-full shadow hover:bg-orange-700 transition-colors duration-300"
+                                        >
+                                            Book Now
+                                        </Link>
+                                    </div>
+                                </motion.div>
+                            )}
+                        </AnimatePresence>
                     </nav>
                 </header>
 
-                {/* Page Content with padding for fixed header */}
+                {/* Page Content */}
                 <main className="flex-grow transition-colors duration-500">
                     {children}
                 </main>
