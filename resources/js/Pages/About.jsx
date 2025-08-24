@@ -25,7 +25,7 @@ export default function About() {
                 // typingSpeed={120}
                 rotationSpeed={10000}
                 subtitle="Experience unparalleled luxury and authentic hospitality in the heart of Fort Portal. At FortBreeze Hotel, we are dedicated to delivering an exceptional stay that blends comfort, culture, and personalized service."
-                image="/images/download.jpg"
+                image="/images/download1.jpg"
                 bgColor="bg-green-100 dark:bg-gray-800"
                 buttonText="Read More About Us"
                 buttonLink="#about"
