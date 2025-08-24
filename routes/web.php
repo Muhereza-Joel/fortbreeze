@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
@@ -52,6 +53,8 @@ Route::get('/frequently-asked-questions', function () {
 Route::get('/careers', function () {
     return Inertia::render('Careers');
 })->name('careers');
+
+Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

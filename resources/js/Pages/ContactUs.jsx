@@ -3,6 +3,7 @@ import PublicLayout from "@/Layouts/PublicLayout";
 import SectionWrapper from "@/Components/SectionWrapper";
 import { Head, useForm } from "@inertiajs/react";
 import SEOTemplate from "@/Components/SEOTemplate";
+import { toast } from "react-toastify";
 
 export default function ContactUs() {
     const contactDetails = {
@@ -23,8 +24,15 @@ export default function ContactUs() {
         e.preventDefault();
         post(route("contact.send"), {
             onSuccess: () => {
-                alert("Your message has been sent successfully!");
+                toast.success(
+                    "Thank you for contacting FortBreeze Hotel! Your message has been sent successfully!"
+                );
                 reset();
+            },
+            onError: (errors) => {
+                toast.error(
+                    "Failed to send the message. Please check the fields and try again."
+                );
             },
         });
     };

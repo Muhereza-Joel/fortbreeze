@@ -7,6 +7,8 @@ import TopBar from "@/Components/TopBar";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import CookieBanner from "@/Components/CookieBannar";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function PublicLayout({ title, children }) {
     const [scrolled, setScrolled] = useState(false);
@@ -171,6 +173,7 @@ export default function PublicLayout({ title, children }) {
                 <BackToTop />
                 <CookieBanner />
                 <Footer />
+                <ToastContainer position="bottom-right" autoClose={5000} />
             </div>
         </>
     );
