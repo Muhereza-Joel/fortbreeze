@@ -44,7 +44,7 @@ export default function ContactUs() {
                 description="Get in touch with FortBreeze Hotel for inquiries, bookings, and assistance."
                 keywords="Contact FortBreeze Hotel, Fort Portal, Uganda, hotel inquiries, customer support"
                 url="https://fortbreeze.com/contact"
-                image="https://fortbreeze.com/images/contact-og.jpg"
+                image="https://fortbreeze.com/images/entrance.webp"
             />
 
             <HeroSection

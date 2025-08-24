@@ -55,7 +55,7 @@ export default function Home() {
                 description="Experience luxury and comfort at Fortbreeze Hotel, your perfect getaway in Fort Portal."
                 keywords="Fortbreeze Hotel, Fort Portal, Uganda, luxury hotel, accommodation"
                 url="https://fortbreeze.com"
-                image="https://fortbreeze.com/images/home-og.jpg"
+                image="https://fortbreeze.com/images/entrance2.webp"
             />
             <HomeSlider />
 

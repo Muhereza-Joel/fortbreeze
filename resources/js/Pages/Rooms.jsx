@@ -65,7 +65,7 @@ export default function Rooms() {
                 description="Explore the diverse range of rooms and suites at FortBreeze Hotel, designed for comfort and luxury."
                 keywords="FortBreeze Hotel, Fort Portal, Uganda, hotel rooms, luxury accommodations"
                 url="https://fortbreeze.com/rooms"
-                image="https://fortbreeze.com/images/rooms-og.jpg"
+                image="https://fortbreeze.com/images/bedrooms.webp"
             />
 
             <HeroSection

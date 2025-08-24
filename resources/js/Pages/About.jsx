@@ -13,7 +13,7 @@ export default function About() {
                 description="Learn about FortBreeze Hotel, its luxurious rooms, exquisite dining, and unforgettable experiences in Fort Portal, Uganda."
                 keywords="FortBreeze Hotel, Fort Portal, Uganda, luxury hotel, accommodations, restaurant"
                 url="https://fortbreeze.com/about"
-                image="https://fortbreeze.com/images/about-og.jpg"
+                image="https://fortbreeze.com/images/mainentrance.webp"
             />
             <HeroSection
                 titles={[

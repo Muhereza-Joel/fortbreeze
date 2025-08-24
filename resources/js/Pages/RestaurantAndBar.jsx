@@ -55,7 +55,7 @@ export default function RestaurantAndBar() {
                 description="Indulge in a culinary journey at FortBreeze Hotel's restaurant and bar, offering exquisite dining and a vibrant atmosphere."
                 keywords="FortBreeze Hotel, Fort Portal, Uganda, restaurant, bar, dining"
                 url="https://fortbreeze.com/restaurant-and-bar"
-                image="https://fortbreeze.com/images/restaurant-og.jpg"
+                image="https://fortbreeze.com/images/bar.webp"
             />
 
             {/* Hero Section */}
