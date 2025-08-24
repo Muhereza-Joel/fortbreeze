@@ -13,6 +13,7 @@ export default function HeroSectionWithCTA({
     bgColor = "bg-gray-100 dark:bg-gray-800",
     textColor = "text-gray-900 dark:text-gray-100",
     titleGradient = "",
+    enableMorph = false, // New prop to control morph animation
 }) {
     const isImageRight = imagePosition === "right";
 
@@ -38,6 +39,51 @@ export default function HeroSectionWithCTA({
         },
     };
 
+    // Morphing animation variants (only used if enableMorph is true)
+    const morphVariants = {
+        animate: {
+            borderRadius: [
+                "60% 40% 30% 70% / 60% 30% 70% 40%",
+                "50% 50% 60% 40% / 50% 60% 40% 50%",
+                "40% 60% 70% 30% / 40% 70% 30% 60%",
+                "60% 40% 30% 70% / 60% 30% 70% 40%",
+            ],
+            transition: {
+                borderRadius: {
+                    duration: 10,
+                    repeat: Infinity,
+                    repeatType: "reverse",
+                    ease: "easeInOut",
+                },
+            },
+        },
+    };
+
+    // Image container with conditional morphing
+    const ImageContainer = ({ children }) => {
+        if (enableMorph) {
+            return (
+                <motion.div
+                    className="relative rounded-lg overflow-hidden shadow-lg max-h-[28rem] w-full"
+                    variants={morphVariants}
+                    animate="animate"
+                    whileHover={{
+                        scale: 1.02,
+                        transition: { duration: 0.3 },
+                    }}
+                >
+                    {children}
+                </motion.div>
+            );
+        }
+
+        return (
+            <div className="relative rounded-lg overflow-hidden shadow-lg max-h-[28rem] w-full">
+                {children}
+            </div>
+        );
+    };
+
     return (
         <section
             className={`${!bgImage && bgColor} relative`}
@@ -54,11 +100,15 @@ export default function HeroSectionWithCTA({
                         variants={imageVariants}
                         className="flex justify-center"
                     >
-                        <img
-                            src={image}
-                            alt={title}
-                            className="rounded-lg shadow-lg max-h-[28rem] w-full object-cover"
-                        />
+                        <ImageContainer>
+                            <img
+                                src={image}
+                                alt={title}
+                                className="w-full h-full object-cover"
+                            />
+                            {/* Subtle gradient overlay for depth */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/10"></div>
+                        </ImageContainer>
                     </motion.div>
                 )}
 
@@ -90,12 +140,17 @@ export default function HeroSectionWithCTA({
                     )}
 
                     {buttonText && (
-                        <a
+                        <motion.a
                             href={buttonLink}
                             className="inline-block bg-blue-600 text-white py-3 px-6 rounded-full font-medium shadow hover:bg-blue-700 transition duration-300"
+                            whileHover={{
+                                scale: 1.05,
+                                transition: { duration: 0.2 },
+                            }}
+                            whileTap={{ scale: 0.95 }}
                         >
                             {buttonText}
-                        </a>
+                        </motion.a>
                     )}
                 </motion.div>
 
@@ -108,11 +163,16 @@ export default function HeroSectionWithCTA({
                         variants={imageVariants}
                         className="flex justify-center"
                     >
-                        <img
-                            src={image}
-                            alt={title}
-                            className="rounded-lg shadow-lg max-h-[28rem] w-full object-cover"
-                        />
+                        <ImageContainer>
+                            <img
+                                src={image}
+                                alt={title}
+                                className="w-full h-full object-cover"
+                                loading="lazy"
+                            />
+                            {/* Subtle gradient overlay for depth */}
+                            <div className="absolute inset-0 bg-gradient-to-br from-transparent to-black/10"></div>
+                        </ImageContainer>
                     </motion.div>
                 )}
             </div>

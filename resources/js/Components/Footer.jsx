@@ -134,7 +134,7 @@ export default function Footer() {
                                 </svg>
                             </Link>
                         </div>
-                        <div>
+                        {/* <div>
                             <p className="text-sm text-gray-400 mb-2">
                                 Subscribe to our newsletter
                             </p>
@@ -148,7 +148,7 @@ export default function Footer() {
                                     Subscribe
                                 </button>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="mt-8 pt-8 border-t border-gray-700 text-center text-gray-400 text-sm">

@@ -64,7 +64,7 @@ export default function RestaurantAndBar() {
                 titleGradient="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600"
                 subtitle="Do not hesitate to leave your reservation. We handle all bookings with care and attention."
                 bgColor="bg-gray-100 dark:bg-gray-800"
-                image="/images/download3.jpg"
+                image="/images/bar.webp"
                 buttonText="Leave Your Reservation"
                 buttonLink="/booking"
                 buttonColor="bg-blue-600 text-white hover:bg-blue-700"

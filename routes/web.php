@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Foundation\Application;
@@ -55,6 +56,7 @@ Route::get('/careers', function () {
 })->name('careers');
 
 Route::post('/contact/send', [ContactController::class, 'send'])->name('contact.send');
+Route::post('/booking/send', [BookingController::class, 'send'])->name('booking.send');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');

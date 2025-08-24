@@ -125,7 +125,7 @@ export default function OurServices() {
                 rotationSpeed={10000}
                 subtitle="Discover a range of premium services designed to make your stay at FortBreeze Hotel in Fort Portal truly exceptional — from luxury accommodation and fine dining to wellness and cultural experiences."
                 bgColor="bg-gray-100 dark:bg-gray-800"
-                image="/images/download2.jpg"
+                image="/images/fitnesscentre.webp"
                 buttonText="Explore Our Services"
                 buttonLink="#services"
                 buttonColor="bg-blue-600 text-white hover:bg-blue-700"

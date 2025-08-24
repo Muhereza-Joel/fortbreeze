@@ -192,6 +192,7 @@ export default function HeroSection({
                             src={image}
                             alt={titles[index % titles.length] || "Hero image"}
                             className="rounded-lg shadow-lg max-h-96 w-full object-cover"
+                            loading="lazy"
                         />
                     </motion.div>
                 )}

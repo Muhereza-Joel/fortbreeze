@@ -54,7 +54,7 @@ export default function ContactUs() {
                 ]}
                 subtitle="We’d love to hear from you! Whether you’re planning your stay, arranging an event, or need any assistance, our team is ready to help."
                 bgColor="bg-yellow-100 dark:bg-gray-800"
-                image="/images/download.jpg"
+                image="/images/entrance.webp"
                 rotationSpeed={10000}
                 buttonText="Leave Us A Message"
                 buttonLink="#message-form"

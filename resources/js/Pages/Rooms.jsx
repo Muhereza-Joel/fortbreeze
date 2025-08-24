@@ -73,7 +73,7 @@ export default function Rooms() {
                 subtitle="Discover our range of thoughtfully designed accommodations, from cozy single rooms to opulent suites—all tailored for your comfort."
                 bgColor="bg-orange-100 dark:bg-gray-800"
                 titleGradient="bg-gradient-to-r from-orange-500 via-yellow-500 to-purple-600"
-                image="/images/download2.jpg"
+                image="/images/bedrooms.webp"
                 buttonText="Explore Our Rooms"
                 buttonLink="#rooms"
                 buttonColor="bg-blue-600 text-white hover:bg-blue-700"

@@ -25,7 +25,7 @@ export default function About() {
                 // typingSpeed={120}
                 rotationSpeed={10000}
                 subtitle="Experience unparalleled luxury and authentic hospitality in the heart of Fort Portal. At FortBreeze Hotel, we are dedicated to delivering an exceptional stay that blends comfort, culture, and personalized service."
-                image="/images/download1.jpg"
+                image="/images/mainentrance.webp"
                 bgColor="bg-green-100 dark:bg-gray-800"
                 buttonText="Read More About Us"
                 buttonLink="#about"
@@ -76,26 +76,26 @@ export default function About() {
                 {/* About content pictorial sections */}
                 <section className="max-w-7xl mx-auto space-y-20 px-4 sm:px-6 lg:px-8">
                     <PictorialSection
-                        image="/images/download1.jpg"
+                        image="/images/livingbed.webp"
                         alt="Room with a view"
-                        title="Serene Accommodations"
-                        text="Nestled in the breathtaking foothills of the Rwenzori Mountains, FortBreeze Hotel offers elegantly appointed rooms and suites with panoramic views of Fort Portal’s iconic hills, blending modern amenities with timeless comfort."
+                        title="Elegant Rooms and Suites"
+                        text="Set in the stunning foothills of the Rwenzori Mountains, Fortbreeze Hotel offers stylish rooms and suites with sweeping views of Fort Portal’s hills. Each space blends modern comforts with timeless charm, giving you the perfect place to relax and feel at home."
                         reverse={false}
                     />
 
                     <PictorialSection
-                        image="/images/download2.jpg"
+                        image="/images/sittingchairs.webp"
                         alt="Signature restaurant dishes"
-                        title="Exquisite Culinary Experiences"
-                        text="Indulge your palate at our signature restaurant, where expert chefs craft exquisite dishes from locally sourced ingredients—blending authentic Ugandan flavors with international cuisine. Enjoy spa treatments and personalized concierge services tailored just for you."
+                        title="Authentic Flavors, Global Taste"
+                        text="Treat yourself at our signature restaurant, where skilled chefs prepare delicious meals made with fresh local ingredients—mixing authentic Ugandan flavors with international cuisine. Relax with our spa treatments and enjoy concierge services designed just for you."
                         reverse={true}
                     />
 
                     <PictorialSection
-                        image="/images/download3.jpg"
+                        image="/images/gym.webp"
                         alt="Cultural tour experience"
-                        title="Unforgettable Adventures"
-                        text="Whether visiting for business, leisure, or to explore Fort Portal’s rich cultural heritage and natural wonders, FortBreeze Hotel is your gateway to impeccable service and warm Ugandan hospitality. Create memories that will last a lifetime."
+                        title="Stay Active and Energized"
+                        text="Whether you’re here for business or leisure, our modern fitness centre helps you keep up with your workout routine. From cardio to strength training, enjoy a well-equipped gym and friendly atmosphere. Recharge your body, stay healthy, and make the most of your stay at Fortbreeze Hotel."
                         reverse={false}
                     />
                 </section>

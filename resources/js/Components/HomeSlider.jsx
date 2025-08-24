@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
     {
         id: 1,
-        image: "/images/download.jpg",
+        image: "/images/entrance.webp",
         title: "Fortbreeze Hotel Fort Portal",
         subtitle: "Your serene retreat in the heart of Fort Portal.",
         description:
@@ -14,7 +14,7 @@ const slides = [
     },
     {
         id: 2,
-        image: "/images/download2.jpg",
+        image: "/images/newbuilding.webp",
         title: "Quality You Can Trust",
         subtitle: "Exceptional service, every time.",
         description:
@@ -24,7 +24,7 @@ const slides = [
     },
     {
         id: 3,
-        image: "/images/download3.jpg",
+        image: "/images/roomtable.webp",
         title: "Innovative Comfort",
         subtitle: "Modern amenities tailored for your convenience.",
         description:

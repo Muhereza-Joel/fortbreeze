@@ -62,40 +62,43 @@ export default function Home() {
             <HeroSectionWithCTA
                 title="Discover the Charm of Fort Portal"
                 subtitle="Where comfort meets tranquility."
-                description="Escape the ordinary and unwind in the serene elegance of Fortbreeze Hotel, nestled among breathtaking views and rich culture. Immerse yourself in the natural beauty that surrounds us—from lush green landscapes to the majestic Rwenzori Mountains. Whether you're seeking a peaceful retreat or an adventure-filled getaway, our hotel offers the perfect balance of comfort, tranquility, and authentic local experiences to refresh your mind and spirit."
+                description="Escape the ordinary and relax at Fortbreeze Hotel, set among beautiful views and rich culture. Enjoy the natural beauty around us—from green landscapes to the stunning Rwenzori Mountains. Whether you want a quiet getaway or an adventure, our hotel gives you the perfect mix of comfort, peace, and local experiences to refresh your mind and spirit."
                 buttonText="Book Your Stay"
                 buttonLink="#book"
-                image="/images/download.jpg"
+                image="/images/sittingchairs.webp"
                 imagePosition="right"
                 bgColor="bg-white"
                 textColor="text-gray-900"
                 titleGradient="bg-gradient-to-r from-purple-600 to-pink-500"
+                enableMorph={true}
             />
 
             <HeroSectionWithCTA
                 title="Elegance in Every Detail"
                 subtitle="Hospitality redefined."
-                description="Experience refined luxury with our thoughtfully designed rooms and personalized services, perfect for both business and leisure travelers. Every corner of Fortbreeze Hotel showcases exceptional attention to detail, combining modern elegance with cozy touches to create an inviting atmosphere. Enjoy tailored amenities, attentive staff, and sophisticated spaces that cater to your unique needs, ensuring your stay is as productive or relaxing as you desire."
+                description="Discover comfort and style in our well-designed rooms, perfect for both business and leisure travelers. At Fortbreeze Hotel, every detail is crafted to make you feel at home—modern elegance blended with cozy touches creates a warm and inviting atmosphere. Enjoy thoughtful amenities, friendly service, and spaces designed to match your needs, whether you want a productive stay or a relaxing escape."
                 buttonText="Explore Our Rooms"
                 buttonLink="#book"
-                image="/images/download.jpg"
+                image="/images/roomsitting2.webp"
                 imagePosition="left"
                 bgColor="bg-white"
                 textColor="text-gray-900"
                 titleGradient="bg-gradient-to-r from-teal-500 to-cyan-500"
+                enableMorph={true}
             />
 
             <HeroSectionWithCTA
                 title="Modern Comfort. Timeless Style."
                 subtitle="Relax. Recharge. Repeat."
-                description="Enjoy a perfect blend of innovation and tradition with modern amenities, spacious suites, and a touch of classic Fort Portal charm. From high-speed internet and cutting-edge conference facilities to tastefully decorated rooms inspired by local culture, we provide everything you need to relax, recharge, and reconnect. Whether lounging in our serene gardens or exploring nearby attractions, Fortbreeze Hotel promises a memorable experience that combines convenience with timeless hospitality."
+                description="Enjoy the best of modern comfort and local charm at Fortbreeze Hotel. Our spacious suites and modern amenities—like high-speed internet and fully equipped conference facilities—are designed to meet your every need. Relax in tastefully decorated rooms inspired by Fort Portal’s culture, unwind in our peaceful gardens, or explore nearby attractions. At Fortbreeze, every stay combines convenience with warm, timeless hospitality."
                 buttonText="Visit Us Today"
                 buttonLink="#book"
-                image="/images/download.jpg"
+                image="/images/entrance2.webp"
                 imagePosition="right"
                 bgColor="bg-white"
                 textColor="text-gray-900"
                 titleGradient="bg-gradient-to-r from-orange-500 to-yellow-400"
+                enableMorph={true}
             />
 
             <SectionWrapper>
