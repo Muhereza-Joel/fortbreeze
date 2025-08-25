@@ -10,11 +10,12 @@ export default function SEOTemplate({
     type = "website",
     children,
 }) {
-    const defaultTitle = "FortBreeze Hotel | Luxury in Fort Portal";
+    const defaultTitle =
+        "FortBreeze Hotel | Luxury Accommodation in Fort Portal, Uganda";
     const defaultDescription =
-        "Experience unparalleled luxury and authentic hospitality at FortBreeze Hotel, Fort Portal, Uganda.";
-    const defaultUrl = "https://fortbreeze.com";
-    const defaultImage = "https://fortbreeze.com/images/og-image.jpg";
+        "FortBreeze Hotel offers elegant rooms, fine dining, and modern amenities in the heart of Fort Portal, Uganda. Enjoy breathtaking Rwenzori views, exceptional service, and authentic Ugandan hospitality.";
+    const defaultUrl = "https://fortbreezehotel.com";
+    const defaultImage = "https://fortbreezehotel.com/images/entrance2.webp";
 
     return (
         <>
