@@ -11,9 +11,9 @@ export default function About() {
             <SEOTemplate
                 title="About FortBreeze Hotel | Luxury in Fort Portal"
                 description="Learn about FortBreeze Hotel, its luxurious rooms, exquisite dining, and unforgettable experiences in Fort Portal, Uganda."
-                keywords="FortBreeze Hotel, Fort Portal, Uganda, luxury hotel, accommodations, restaurant"
-                url="https://fortbreeze.com/about"
-                image="https://fortbreeze.com/images/mainentrance.webp"
+                keywords="FortBreeze Hotel, About FortBreeze Hotel, Fort Portal Hotels, Uganda, luxury hotel, accommodations, restaurant"
+                url="https://fortbreezehotel.com/about"
+                image="https://fortbreezehotel.com/images/mainentrance.webp"
             />
             <HeroSection
                 titles={[

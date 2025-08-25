@@ -1,1 +1,0 @@
-import{j as t}from"./app-C2EBpHyt.js";function s({title:r,subtitle:e,align:a="center"}){return t.jsxs("div",{className:`text-${a} mb-10`,children:[t.jsx("h2",{className:"text-3xl font-bold text-gray-900 dark:text-gray-100",children:r}),e&&t.jsx("p",{className:"mt-2 text-lg text-gray-600 dark:text-gray-300",children:e})]})}export{s as S};

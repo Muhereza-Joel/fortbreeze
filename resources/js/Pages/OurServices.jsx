@@ -110,8 +110,8 @@ export default function OurServices() {
                 title="Our Services | FortBreeze Hotel"
                 description="Explore the exceptional services offered at FortBreeze Hotel, from luxury accommodations to unique experiences in Fort Portal."
                 keywords="FortBreeze Hotel, Fort Portal, Uganda, hotel services, luxury accommodations"
-                url="https://fortbreeze.com/services"
-                image="https://fortbreeze.com/images/fitnesscentre.webp"
+                url="https://fortbreezehotel.com/services"
+                image="https://fortbreezehotel.com/images/fitnesscentre.webp"
             />
 
             <HeroSection
