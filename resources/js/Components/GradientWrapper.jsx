@@ -27,6 +27,19 @@ export function GradientWrapper({
 
             {/* Content */}
             <div className="relative rounded-xl bg-transparent">{children}</div>
+
+            {/* Styles to remove gradient in dark mode */}
+            <style jsx>{`
+                .overlay-layer {
+                    background: var(--overlay-light);
+                }
+                :global(.dark) .overlay-layer {
+                    background: var(--overlay-dark);
+                }
+                :global(.dark) .gradient-layer {
+                    display: none;
+                }
+            `}</style>
         </div>
     );
 }
