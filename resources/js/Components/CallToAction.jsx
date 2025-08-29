@@ -22,7 +22,7 @@ export default function CallToAction({
             className={`${bgColor} ${darkBgColor} ${paddingY} ${paddingX} text-center ${rounded} ${shadow}`}
         >
             <h2 className={`text-3xl font-bold ${textColor} mb-4`}>{title}</h2>
-            <p className={`${subTextColor} mb-6`}>{text}</p>
+            <p className={`${subTextColor} mb-6 px-80`}>{text}</p>
             <Link
                 href={buttonLink}
                 className={`px-6 py-3 ${buttonBgColor} ${buttonTextColor} font-semibold shadow ${buttonHoverBg} transition`}

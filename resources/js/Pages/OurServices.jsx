@@ -10,42 +10,42 @@ import PublicLayout from "@/Layouts/PublicLayout";
 import { Head } from "@inertiajs/react";
 import { BedDouble, Utensils, Car, Heart, Trees, Wifi } from "lucide-react";
 
-// Test services remain the same
+// Updated services with SEO-focused descriptions
 const services = [
     {
-        title: "Luxury Accommodation",
+        title: "Accommodation in Fort Portal",
         description:
-            "Spacious, elegantly furnished rooms with stunning views of Fort Portal’s rolling hills and the Rwenzori Mountains.",
+            "Comfortable rooms with views of Fort Portal's hills and Rwenzori Mountains. Our accommodation options provide a relaxing stay for visitors to Western Uganda.",
         icon: BedDouble,
     },
     {
-        title: "Fine Dining Restaurant",
+        title: "Restaurant in Fort Portal",
         description:
-            "Savor authentic Ugandan dishes and international cuisine crafted from fresh local ingredients in a sophisticated ambiance.",
+            "Enjoy Ugandan dishes and international cuisine made with fresh local ingredients. Our Fort Portal restaurant offers a pleasant dining experience.",
         icon: Utensils,
     },
     {
-        title: "Airport & City Transfers",
+        title: "Airport Transfers & Transportation",
         description:
-            "Reliable and comfortable transport services connecting you to Kasese Airport and key Fort Portal attractions.",
+            "Reliable transport services to Kasese Airport and Fort Portal attractions. We provide convenient transportation for our guests.",
         icon: Car,
     },
     {
-        title: "Spa & Wellness",
+        title: "Spa & Wellness Services",
         description:
-            "Unwind with rejuvenating massages, wellness therapies, and access to our sauna and relaxation lounges.",
+            "Relax with massages, wellness therapies, and access to our sauna. Our spa services help you unwind during your stay in Fort Portal.",
         icon: Heart,
     },
     {
-        title: "Nature & Cultural Tours",
+        title: "Tours to Kibale National Park",
         description:
-            "Explore nearby natural wonders like Kibale National Park and Crater Lakes, or immerse yourself in local Tooro cultural heritage.",
+            "Explore Kibale National Park, Crater Lakes, and local cultural heritage. We offer guided tours to attractions in Western Uganda.",
         icon: Trees,
     },
     {
-        title: "High-Speed Wi-Fi",
+        title: "High-Speed Internet Access",
         description:
-            "Complimentary, reliable internet access throughout the hotel to keep you connected during your stay.",
+            "Complimentary Wi-Fi throughout our hotel in Fort Portal. Stay connected during your visit to Uganda.",
         icon: Wifi,
     },
 ];
@@ -107,26 +107,26 @@ export default function OurServices() {
     return (
         <PublicLayout title="Our Services">
             <SEOTemplate
-                title="Our Services | FortBreeze Hotel"
-                description="Explore the exceptional services offered at FortBreeze Hotel, from luxury accommodations to unique experiences in Fort Portal."
-                keywords="FortBreeze Hotel, Fort Portal, Uganda, hotel services, luxury accommodations"
+                title="Hotel Services in Fort Portal Uganda | FortBreeze Hotel"
+                description="Discover accommodation, dining, and tour services at FortBreeze Hotel in Fort Portal Uganda. Enjoy comfortable rooms, restaurant meals, and convenient access to Kibale National Park."
+                keywords="FortBreeze Hotel services, accommodation Fort Portal, restaurant Fort Portal, tours Kibale National Park, hotel services Uganda, Fort Portal Uganda hotel"
                 url="https://fortbreezehotel.com/services"
                 image="https://fortbreezehotel.com/images/fitnesscentre.webp"
             />
 
             <HeroSection
                 titles={[
-                    "Our Services At FortBreeze Hotel",
-                    "Unmatched Hospitalicty in Fort Portal City",
-                    "Experience Luxury & Comfort at FortBreeze",
+                    "Stay Fit And Healthy at FortBreeze Hotel ",
+                    "The Best Accommodation & Dining in Fort Portal",
+                    "Tours to Kibale National Park And Beyond",
                 ]}
                 animationMode="typing"
                 typingSpeed={120}
                 rotationSpeed={10000}
-                subtitle="Discover a range of premium services designed to make your stay at FortBreeze Hotel in Fort Portal truly exceptional — from luxury accommodation and fine dining to wellness and cultural experiences."
-                bgColor="bg-gray-100 dark:bg-gray-800"
+                subtitle="Experience our range of services at FortBreeze Hotel in Fort Portal Uganda. From comfortable accommodation and dining to transportation and tours to Kibale National Park."
+                bgColor="bg-gray-50 dark:bg-gray-800"
                 image="/images/fitnesscentre.webp"
-                buttonText="Explore Our Services"
+                buttonText="View Our Services"
                 buttonLink="#services"
                 buttonColor="bg-blue-600 text-white hover:bg-blue-700"
             />
@@ -141,8 +141,8 @@ export default function OurServices() {
                 <span id="services"></span>
                 <SectionWrapper>
                     <SectionHeading
-                        title="What We Offer"
-                        subtitle="Experience comfort, luxury, and adventure in the heart of Fort Portal"
+                        title="Services at Our Fort Portal Hotel"
+                        subtitle="Enjoy comfortable accommodation, dining, and convenient access to attractions in Western Uganda"
                     />
                     <FeatureGrid items={services} />
                 </SectionWrapper>
@@ -150,14 +150,15 @@ export default function OurServices() {
 
             <SectionWrapper>
                 <SectionHeading
-                    title="What Our Customers Say"
-                    subtitle="Hear from our guests about their unforgettable experiences at FortBreeze Hotel"
+                    title="Guest Experiences at FortBreeze Hotel"
+                    subtitle="Read what our visitors say about their stay at our Fort Portal hotel"
                 />
                 <TestimonialSlider testimonials={testimonials} />
             </SectionWrapper>
+
             <CallToAction
-                title="Book Your Stay At Fort Breeze Hotel Now"
-                text="Reserve your room and enjoy luxury in Fort Portal Tourism City."
+                title="Book Your Stay at FortBreeze Hotel"
+                text="Reserve your room at our Fort Portal hotel and enjoy comfortable accommodation with convenient access to local attractions."
                 buttonText="Book Now"
                 buttonLink={route("booking")}
                 bgColor="bg-gray-900"

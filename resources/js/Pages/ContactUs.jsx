@@ -53,7 +53,7 @@ export default function ContactUs() {
                     "FortBreeze Hotel, Fort Portal Tourism City Uganda",
                 ]}
                 subtitle="We’d love to hear from you! Whether you’re planning your stay, arranging an event, or need any assistance, our team is ready to help."
-                bgColor="bg-yellow-100 dark:bg-gray-800"
+                bgColor="bg-gray-50 dark:bg-gray-800"
                 image="/images/entrance.webp"
                 rotationSpeed={10000}
                 buttonText="Leave Us A Message"

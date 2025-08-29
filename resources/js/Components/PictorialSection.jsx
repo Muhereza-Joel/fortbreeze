@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "@inertiajs/react"; // <-- ensure you import Link
 
 export default function PictorialSection({
     image,
@@ -6,6 +7,8 @@ export default function PictorialSection({
     title,
     text,
     reverse = false,
+    buttonLink = null, // new: configurable link
+    buttonText = "Book Your Stay", // new: configurable text
 }) {
     const containerVariants = {
         hidden: { opacity: 0, x: reverse ? 100 : -100 },
@@ -25,6 +28,7 @@ export default function PictorialSection({
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
         >
+            {/* Image Section */}
             <motion.div
                 className="flex-shrink-0 w-full md:w-1/2 rounded-lg overflow-hidden shadow-lg"
                 variants={containerVariants}
@@ -37,6 +41,7 @@ export default function PictorialSection({
                 />
             </motion.div>
 
+            {/* Text Section */}
             <motion.div
                 className="mt-8 md:mt-0 w-full md:w-1/2 max-w-xl text-center md:text-left"
                 variants={containerVariants}
@@ -44,9 +49,19 @@ export default function PictorialSection({
                 <h3 className="text-2xl font-semibold text-gray-900 dark:text-gray-100 mb-4">
                     {title}
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg">
+                <p className="text-gray-700 dark:text-gray-300 leading-relaxed text-lg mb-6">
                     {text}
                 </p>
+
+                {/* Conditionally render button if link provided */}
+                {buttonLink && (
+                    <Link
+                        href={buttonLink}
+                        className="inline-block bg-blue-600 text-white py-3 px-6 rounded-full font-medium shadow hover:bg-blue-700 transition duration-300"
+                    >
+                        {buttonText}
+                    </Link>
+                )}
             </motion.div>
         </motion.div>
     );

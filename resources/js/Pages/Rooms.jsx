@@ -9,9 +9,9 @@ import { BedDouble, Users, Shield, Coffee } from "lucide-react";
 export default function Rooms() {
     const roomTypes = [
         {
-            title: "Budget Single Room",
+            title: "Budget Single Room in Fort Portal",
             description:
-                "Air-conditioned single room with a private bathroom, flatscreen TV, wardrobe, and safety deposit box.",
+                "Air-conditioned single room with private bathroom, flatscreen TV, wardrobe, and safety deposit box. Affordable accommodation option at our Fort Portal hotel.",
             image: "/images/download3.jpg",
             amenities: [
                 "Air conditioning",
@@ -21,9 +21,9 @@ export default function Rooms() {
             ],
         },
         {
-            title: "Superior Double Room",
+            title: "Double Room Fort Portal Hotel",
             description:
-                "Spacious double room with garden views, seating area, terrace, and deep soaking bathtub.",
+                "Spacious double room with garden views, seating area, terrace, and deep soaking bathtub. Comfortable accommodation for couples in Fort Portal.",
             image: "/images/download3.jpg",
             amenities: [
                 "Garden view",
@@ -33,9 +33,9 @@ export default function Rooms() {
             ],
         },
         {
-            title: "King Suite",
+            title: "King Suite Fort Portal Uganda",
             description:
-                "Luxurious suite featuring kitchenette with refrigerator, dining area, seating space, balcony, and ensuite bathroom.",
+                "Luxurious suite featuring kitchenette with refrigerator, dining area, seating space, balcony, and ensuite bathroom. Premium accommodation in Fort Portal.",
             image: "/images/download3.jpg",
             amenities: [
                 "Kitchenette",
@@ -45,9 +45,9 @@ export default function Rooms() {
             ],
         },
         {
-            title: "Presidential Suite",
+            title: "Presidential Suite Fort Portal",
             description:
-                "Expansive living area, full kitchen, balcony with views, dual bedrooms—perfect for VIP guests.",
+                "Expansive living area, full kitchen, balcony with views, dual bedrooms—perfect for VIP guests. Our largest accommodation option in Fort Portal.",
             image: "/images/download3.jpg",
             amenities: [
                 "Full kitchen",
@@ -61,28 +61,28 @@ export default function Rooms() {
     return (
         <PublicLayout>
             <SEOTemplate
-                title="Our Rooms | FortBreeze Hotel"
-                description="Explore the diverse range of rooms and suites at FortBreeze Hotel, designed for comfort and luxury."
-                keywords="FortBreeze Hotel, Fort Portal, Uganda, hotel rooms, luxury accommodations"
+                title="Accommodation in Fort Portal Uganda | FortBreeze Hotel Rooms"
+                description="Explore comfortable rooms and suites at FortBreeze Hotel in Fort Portal Uganda. Budget-friendly accommodation options with amenities for all travelers."
+                keywords="FortBreeze Hotel rooms, accommodation Fort Portal Uganda, budget hotel Fort Portal, suites in Fort Portal, hotel rooms Uganda"
                 url="https://fortbreeze.com/rooms"
                 image="https://fortbreeze.com/images/bedrooms.webp"
             />
 
             <HeroSection
-                titles={["Our Rooms & Suite Are Budget Friendly"]}
-                subtitle="Discover our range of thoughtfully designed accommodations, from cozy single rooms to opulent suites—all tailored for your comfort."
-                bgColor="bg-orange-100 dark:bg-gray-800"
+                titles={["Accommodation at FortBreeze Hotel Fort Portal"]}
+                subtitle="Discover our range of comfortable rooms in Fort Portal Uganda, from single rooms to spacious suites—all designed for a pleasant stay."
+                bgColor="bg-gray-50 dark:bg-gray-800"
                 titleGradient="bg-gradient-to-r from-orange-500 via-yellow-500 to-purple-600"
                 image="/images/bedrooms.webp"
-                buttonText="Explore Our Rooms"
+                buttonText="View Our Rooms"
                 buttonLink="#rooms"
                 buttonColor="bg-blue-600 text-white hover:bg-blue-700"
             />
 
             <SectionWrapper>
                 <SectionHeading
-                    title="Room Types"
-                    subtitle="Find the perfect ambiance—whether you're traveling solo, with family, or as VIP elite."
+                    title="Rooms & Suites at Our Fort Portal Hotel"
+                    subtitle="Choose from our accommodation options in Fort Portal Uganda—perfect for solo travelers, couples, families, and groups."
                 />
                 <div
                     id="rooms"
@@ -95,7 +95,7 @@ export default function Rooms() {
                         >
                             <img
                                 src={room.image}
-                                alt={room.title}
+                                alt={`${room.title} at FortBreeze Hotel Fort Portal`}
                                 className="w-full h-48 object-cover"
                             />
                             <div className="p-6 flex flex-col flex-grow">

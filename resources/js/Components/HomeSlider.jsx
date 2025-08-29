@@ -6,30 +6,30 @@ const slides = [
         id: 1,
         image: "/images/entrance.webp",
         title: "Fortbreeze Hotel Fort Portal",
-        subtitle: "Your serene retreat in the heart of Fort Portal.",
+        subtitle: "Comfortable Stay in Western Uganda",
         description:
-            "Relax and unwind in our beautiful hotel, where warm hospitality meets modern comfort. Whether you’re here for business or leisure, Fortbreeze offers a welcoming atmosphere surrounded by Fort Portal’s stunning natural beauty.",
-        buttonText: "Book Now",
+            "Experience quality accommodation in Fort Portal with modern amenities and authentic Ugandan hospitality. Perfectly situated for exploring Kibale National Park and the Rwenzori Mountains.",
+        buttonText: "Book Your Stay",
         buttonLink: "#book",
     },
     {
         id: 2,
         image: "/images/newbuilding.webp",
-        title: "Quality You Can Trust",
-        subtitle: "Exceptional service, every time.",
+        title: "Modern Rooms in Fort Portal",
+        subtitle: "Spacious accommodation with premium amenities",
         description:
-            "At Fortbreeze Hotel, we pride ourselves on delivering exceptional services and attention to detail. Enjoy elegantly appointed rooms, spotless facilities, and a dedicated team committed to making your stay perfect.",
-        buttonText: "Explore Rooms",
+            "Our well-appointed rooms feature comfortable bedding, modern facilities, and beautiful views. Ideal for both business travelers and tourists exploring Fort Portal's attractions.",
+        buttonText: "View Room Options",
         buttonLink: "#rooms",
     },
     {
         id: 3,
         image: "/images/roomtable.webp",
-        title: "Innovative Comfort",
-        subtitle: "Modern amenities tailored for your convenience.",
+        title: "Hotel Near Kibale National Park",
+        subtitle: "Your base for Uganda adventures",
         description:
-            "From free high-speed Wi-Fi and conference rooms to modern dining options and relaxing lounge areas, Fortbreeze Hotel blends innovation and comfort to meet all your travel needs, ensuring a memorable and hassle-free stay.",
-        buttonText: "View Amenities",
+            "Stay at Fortbreeze for convenient access to chimpanzee tracking in Kibale Forest, crater lake exploration, and Rwenzori Mountain adventures. We offer comfortable accommodations and reliable services.",
+        buttonText: "Explore Local Attractions",
         buttonLink: "#amenities",
     },
 ];
@@ -85,7 +85,7 @@ export default function HomeSlider() {
                             {/* Animated Text Content */}
                             <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-6">
                                 <motion.h1
-                                    className="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg"
+                                    className="text-4xl md:text-5xl font-bold mb-4 drop-shadow-lg"
                                     variants={textVariants}
                                     initial="hidden"
                                     animate="visible"
@@ -93,17 +93,17 @@ export default function HomeSlider() {
                                 >
                                     {slide.title}
                                 </motion.h1>
-                                <motion.p
-                                    className="text-xl md:text-2xl mb-4 drop-shadow-md"
+                                <motion.h2
+                                    className="text-xl md:text-2xl mb-4 drop-shadow-md font-semibold"
                                     variants={textVariants}
                                     initial="hidden"
                                     animate="visible"
                                     custom={2}
                                 >
                                     {slide.subtitle}
-                                </motion.p>
+                                </motion.h2>
                                 <motion.p
-                                    className="text-md md:text-lg max-w-2xl drop-shadow-sm"
+                                    className="text-md md:text-lg max-w-2xl drop-shadow-sm mb-6"
                                     variants={textVariants}
                                     initial="hidden"
                                     animate="visible"
@@ -118,7 +118,7 @@ export default function HomeSlider() {
                                     initial="hidden"
                                     animate="visible"
                                     custom={4}
-                                    className="mt-6 inline-block bg-gray-900 text-white font-semibold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg"
+                                    className="mt-6 inline-block bg-blue-900 text-gray-100 font-semibold py-3 px-8 rounded-full hover:bg-yellow-400 transition duration-300 shadow-lg"
                                 >
                                     {slide.buttonText}
                                 </motion.a>
@@ -137,8 +137,22 @@ export default function HomeSlider() {
                         className={`w-3 h-3 rounded-full transition-colors duration-300 ${
                             index === current ? "bg-white" : "bg-gray-400"
                         }`}
+                        aria-label={`Go to slide ${index + 1}`}
                     ></button>
                 ))}
+            </div>
+
+            {/* Hidden SEO content for search engines */}
+            <div className="hidden">
+                <h1>Fortbreeze Hotel - Accommodation in Fort Portal Uganda</h1>
+                <h2>Hotel Near Kibale National Park with Modern Amenities</h2>
+                <p>
+                    Fortbreeze Hotel offers quality accommodation in Fort Portal
+                    Uganda with convenient access to Kibale Forest chimpanzee
+                    tracking, crater lakes, and Rwenzori Mountains. Our hotel
+                    features comfortable rooms, dining options, and reliable
+                    service for travelers.
+                </p>
             </div>
         </div>
     );

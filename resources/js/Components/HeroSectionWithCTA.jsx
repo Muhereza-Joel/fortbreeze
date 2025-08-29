@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { Link } from "@inertiajs/react"; // Import Inertia's Link
 
 export default function HeroSectionWithCTA({
     title,
@@ -140,17 +141,21 @@ export default function HeroSectionWithCTA({
                     )}
 
                     {buttonText && (
-                        <motion.a
-                            href={buttonLink}
-                            className="inline-block bg-blue-600 text-white py-3 px-6 rounded-full font-medium shadow hover:bg-blue-700 transition duration-300"
+                        <motion.div
                             whileHover={{
                                 scale: 1.05,
                                 transition: { duration: 0.2 },
                             }}
                             whileTap={{ scale: 0.95 }}
+                            className="inline-block"
                         >
-                            {buttonText}
-                        </motion.a>
+                            <Link
+                                href={buttonLink}
+                                className="inline-block bg-blue-600 text-white py-3 px-6 rounded-full font-medium shadow hover:bg-blue-700 transition duration-300"
+                            >
+                                {buttonText}
+                            </Link>
+                        </motion.div>
                     )}
                 </motion.div>
 

@@ -10,39 +10,39 @@ import { Utensils, Coffee, Wine } from "lucide-react";
 
 const restaurantBarFeatures = [
     {
-        title: "Fine Dining Restaurant",
+        title: "Restaurant in Fort Portal Uganda",
         description:
-            "Savor a fusion of Ugandan and international cuisines prepared by our expert chefs, using fresh, locally sourced ingredients.",
+            "Enjoy Ugandan and international dishes prepared with fresh local ingredients at our Fort Portal restaurant. Our chefs create flavorful meals for all tastes.",
         icon: Utensils,
     },
     {
-        title: "Cozy Coffee Lounge",
+        title: "Coffee Lounge in Fort Portal",
         description:
-            "Relax in our coffee lounge with premium Ugandan coffee, light snacks, and a serene ambiance for conversations or work.",
+            "Relax with Ugandan coffee, light snacks, and a comfortable atmosphere at our coffee lounge in Fort Portal. Perfect for meetings or quiet time.",
         icon: Coffee,
     },
     {
-        title: "Premium Cocktail Bar",
+        title: "Bar in Fort Portal Hotel",
         description:
-            "Enjoy handcrafted cocktails, wines, and spirits in a stylish setting with occasional live music and entertainment.",
+            "Enjoy drinks, wines, and cocktails at our bar in Fort Portal. We offer a pleasant setting with music and entertainment options.",
         icon: Wine,
     },
     {
-        title: "Fine Dining Restaurant",
+        title: "Dining in Fort Portal Uganda",
         description:
-            "Savor a fusion of Ugandan and international cuisines prepared by our expert chefs, using fresh, locally sourced ingredients.",
+            "Experience satisfying meals at our Fort Portal restaurant. We serve a variety of dishes using locally sourced ingredients from the region.",
         icon: Utensils,
     },
     {
-        title: "Cozy Coffee Lounge",
+        title: "Coffee Break in Fort Portal",
         description:
-            "Relax in our coffee lounge with premium Ugandan coffee, light snacks, and a serene ambiance for conversations or work.",
+            "Take a break with quality coffee and snacks at our Fort Portal hotel. Our coffee lounge provides a comfortable space to relax.",
         icon: Coffee,
     },
     {
-        title: "Premium Cocktail Bar",
+        title: "Evening Drinks in Fort Portal",
         description:
-            "Enjoy handcrafted cocktails, wines, and spirits in a stylish setting with occasional live music and entertainment.",
+            "Unwind with evening drinks at our bar in Fort Portal Uganda. We offer a selection of beverages in a welcoming atmosphere.",
         icon: Wine,
     },
 ];
@@ -51,21 +51,21 @@ export default function RestaurantAndBar() {
     return (
         <PublicLayout>
             <SEOTemplate
-                title="Restaurant & Bar | FortBreeze Hotel"
-                description="Indulge in a culinary journey at FortBreeze Hotel's restaurant and bar, offering exquisite dining and a vibrant atmosphere."
-                keywords="FortBreeze Hotel, Fort Portal, Uganda, restaurant, bar, dining"
+                title="Restaurant & Bar in Fort Portal Uganda | FortBreeze Hotel"
+                description="Enjoy dining and drinks at FortBreeze Hotel's restaurant and bar in Fort Portal Uganda. Featuring local Ugandan dishes, coffee lounge, and bar services."
+                keywords="FortBreeze Hotel restaurant, dining Fort Portal Uganda, bar in Fort Portal, coffee lounge Fort Portal, Uganda cuisine, Fort Portal dining"
                 url="https://fortbreezehotel.com/restaurant-and-bar"
                 image="https://fortbreezehotel.com/images/bar.webp"
             />
 
             {/* Hero Section */}
             <HeroSection
-                titles={["Visit Our Restaurant & Bar At FortBreeze Hotel"]}
+                titles={["Restaurant & Bar at FortBreeze Hotel Fort Portal"]}
                 titleGradient="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600"
-                subtitle="Do not hesitate to leave your reservation. We handle all bookings with care and attention."
-                bgColor="bg-gray-100 dark:bg-gray-800"
+                subtitle="Enjoy dining and drinks at our Fort Portal restaurant and bar. We offer a variety of dishes and beverages in a comfortable setting."
+                bgColor="bg-gray-50 dark:bg-gray-800"
                 image="/images/bar.webp"
-                buttonText="Leave Your Reservation"
+                buttonText="Make a Reservation"
                 buttonLink="/booking"
                 buttonColor="bg-blue-600 text-white hover:bg-blue-700"
             />
@@ -80,8 +80,8 @@ export default function RestaurantAndBar() {
             >
                 <SectionWrapper>
                     <SectionHeading
-                        title="Culinary Excellence & Unmatched Ambiance"
-                        subtitle="From breakfast to late-night drinks, we offer a world-class dining and bar experience."
+                        title="Dining & Drinks at Our Fort Portal Hotel"
+                        subtitle="Enjoy meals and beverages at our restaurant and bar in Fort Portal Uganda, featuring local flavors and comfortable atmosphere"
                     />
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
                         {restaurantBarFeatures.map((feature, index) => (
@@ -104,8 +104,8 @@ export default function RestaurantAndBar() {
 
             {/* Call to Action */}
             <CallToAction
-                title="Dine With Us Today"
-                text="Reserve a table and enjoy an unforgettable culinary journey at FortBreeze Hotel."
+                title="Dine at Our Fort Portal Restaurant"
+                text="Reserve a table at our restaurant in Fort Portal Uganda and enjoy a satisfying meal with local flavors."
                 buttonText="Book a Table"
                 buttonLink={route("booking")}
                 bgColor="bg-gray-900"
